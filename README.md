@@ -1,6 +1,13 @@
 # Hermes-IBC-Relayer
 
+[![Screenshot from 2022-10-27 23-26-36](https://user-images.githubusercontent.com/109024799/198394801-5c4f08da-c41d-4e8f-821a-7fff3d5c6c09.png)](https://github.com/informalsystems/hermes/tree/v1.0.0)
 
+
+* [Підготовка hermes]()
+* [Створення каналу]()
+
+
+## Підготовка hermes
 Готуємо необхідні директорію
 
 ```
@@ -86,3 +93,5 @@ systemctl start hermesd
  journalctl -u hermes -f
  
 ```
+
+## Створення каналу
