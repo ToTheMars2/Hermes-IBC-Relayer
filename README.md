@@ -1,6 +1,7 @@
 # Hermes-IBC-Relayer
 
-[![Screenshot from 2022-10-27 23-26-36](https://user-images.githubusercontent.com/109024799/198398377-bf1dfb38-3d45-4f53-aa34-ba0378387a53.png)](https://github.com/informalsystems/hermes/tree/v1.0.0)
+[![Screenshot from 2022-10-27 23-26-36 (1)](https://user-images.githubusercontent.com/109024799/198398874-429c89dd-70d0-43e6-98c6-65279ace8de9.png)
+](https://github.com/informalsystems/hermes/tree/v1.0.0)
 
 
 * [Підготовка hermes](https://github.com/ToTheMars2/Hermes-IBC-Relayer/blob/main/README.md#%D0%BF%D1%96%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-hermes)
