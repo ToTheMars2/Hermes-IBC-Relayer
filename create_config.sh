@@ -24,17 +24,17 @@ host = '0.0.0.0'
 port = 3001
 
 [[chains]]
-id = 'ibc-1'
-rpc_addr = 'http://127.0.0.1:26557'
-grpc_addr = 'http://127.0.0.1:9091'
-websocket_addr = 'ws://127.0.0.1:26557/websocket'
+id = '$Chain-id_one'
+rpc_addr = 'http://$IP_server_one:$RPC_port_one'
+grpc_addr = 'http://$IP_server_one:$GRPC_port_one'
+websocket_addr = 'ws://$IP_server_one:$RPC_port_one/websocket'
 rpc_timeout = '10s'
-account_prefix = 'cosmos'
+account_prefix = '$Prefix_one'
 key_name = 'testkey'
 store_prefix = 'ibc'
 default_gas = 100000
 max_gas = 400000
-gas_price = { price = 0.001, denom = 'stake' }
+gas_price = { price = 0.001, denom = '$Denom_one' }
 gas_multiplier = 1.1
 max_msg_num = 30
 max_tx_size = 2097152
@@ -42,4 +42,26 @@ clock_drift = '5s'
 max_block_time = '30s'
 trusting_period = '14days'
 trust_threshold = { numerator = '1', denominator = '3' }
-address_type = { derivation = 'cosmos' }" > $HOME/.hermes/config.toml
+address_type = { derivation = 'cosmos' }
+
+[[chains]]
+id = '$Chain-id_two'
+rpc_addr = 'http://$IP_server_two:$RPC_port_two'
+grpc_addr = 'http://$IP_server_two:$GRPC_port_two'
+websocket_addr = 'ws://$IP_server_two:$RPC_port_two/websocket'
+rpc_timeout = '10s'
+account_prefix = '$Prefix_two'
+key_name = 'testkey'
+store_prefix = 'ibc'
+default_gas = 100000
+max_gas = 400000
+gas_price = { price = 0.001, denom = '$Denom_one' }
+gas_multiplier = 1.1
+max_msg_num = 30
+max_tx_size = 2097152
+clock_drift = '5s'
+max_block_time = '30s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+address_type = { derivation = 'cosmos' }
+" > $HOME/.hermes/config.toml
