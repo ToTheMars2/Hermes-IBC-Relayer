@@ -3,7 +3,7 @@
 [![Screenshot from 2022-10-27 23-26-36](https://user-images.githubusercontent.com/109024799/198394801-5c4f08da-c41d-4e8f-821a-7fff3d5c6c09.png)](https://github.com/informalsystems/hermes/tree/v1.0.0)
 
 
-* [Підготовка hermes]()
+* [Підготовка hermes](https://github.com/ToTheMars2/Hermes-IBC-Relayer/blob/main/README.md#%D0%BF%D1%96%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-hermes)
 * [Створення каналу]()
 
 
