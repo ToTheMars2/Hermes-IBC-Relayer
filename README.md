@@ -7,7 +7,7 @@ mkdir -p .hermes/bin
 
 ```
 
-Встановлюємо бінарник ((оснання версія)[https://github.com/informalsystems/hermes/releases]) 
+Встановлюємо бінарник ([оснання версія](https://github.com/informalsystems/hermes/releases)) 
 ```
 
 ```
