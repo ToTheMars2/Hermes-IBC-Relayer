@@ -17,19 +17,21 @@ cargo install ibc-relayer-cli@1.0.0 --bin hermes --locked
 Для цього ми створюємо зміні для двох нод
 ```
 Chain-id_one="" \ 
-RPC_one="" \
-GRPC_one="" \
+IP_server_one="" \
+RPC_port_one="" \
+GRPC_port_one="" \
 Prefix_one="" \
-denom_one=""
+Denom_one=""
 
 ```
 
 ```
-Chain-id_two="" \
-RPC_two="" \
-GRPC_two="" \
+Chain-id_two="" \ 
+IP_server_two="" \
+RPC_port_two="" \
+GRPC_port_two="" \
 Prefix_two="" \
-denom_two=""
+Denom_two=""
 
 ```
 
