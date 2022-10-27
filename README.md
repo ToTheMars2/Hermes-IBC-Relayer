@@ -54,3 +54,35 @@ second_mnemonic=""
 hermes keys add  --chain cosmoshub-4 --mnemonic-file $( echo "$first_mnemonic" > first_mnemonic && echo "$PWD/first_mnemonic")
 hermes keys add  --chain cosmoshub-4 --mnemonic-file $( echo "$second_mnemonic" > first_mnemonic && echo "$PWD/first_mnemonic")
 ```
+
+Створюємо сервісник
+```
+sudo tee /etc/systemd/system/hermesd.service > /dev/null <<EOF
+[Unit]
+Description=hermes
+After=network-online.target
+
+[Service]
+User=root
+ExecStart=which(hermes) start
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+Запуск сервісника
+```
+systemctl enable hermesd
+systemctl start hermesd
+
+```
+
+Провірка логів
+```
+ journalctl -u hermes -f
+ 
+```
