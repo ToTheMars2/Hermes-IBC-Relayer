@@ -59,8 +59,9 @@ first_mnemonic="" \
 second_mnemonic=""
 ```
 ```
-hermes keys add  --chain $Chain_id_one --mnemonic-file $( echo "$first_mnemonic" > first_mnemonic && echo "$PWD/first_mnemonic")
-hermes keys add  --chain $Chain_id_two --mnemonic-file $( echo "$second_mnemonic" > first_mnemonic && echo "$PWD/first_mnemonic")
+hermes keys add  --chain $Chain_id_one --mnemonic-file $( echo "$first_mnemonic" > mnemonic && echo "$PWD/mnemonic")
+hermes keys add  --chain $Chain_id_two --mnemonic-file $( echo "$second_mnemonic" > mnemonic && echo "$PWD/mnemonic")
+rm mnemonic
 ```
 
 Створюємо сервісник
