@@ -84,3 +84,4 @@ address_type = { derivation = 'cosmos' }
 " > $HOME/.hermes/config.toml
 
 sed -i '/Chain_id\|IP_server\|RPC_port\|GRPC_port\|Prefix\|Denom/d' $HOME/.bash_profile
+source $HOME/.bash_profile
