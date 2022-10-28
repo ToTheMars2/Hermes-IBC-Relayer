@@ -27,21 +27,20 @@ cargo install ibc-relayer-cli@1.0.0 --bin hermes --locked
 Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.0.0/config.toml))
 Для цього нам потрібно створити зміні
 ```
-Chain_id_one="" \
-IP_server_one="" \
-RPC_port_one="" \
-GRPC_port_one="" \
-Prefix_one="" \
-Denom_one=""
-```
-
-```
-Chain_id_two="" \
-IP_server_two="" \
-RPC_port_two="" \
-GRPC_port_two="" \
-Prefix_two="" \
-Denom_two=""
+echo "
+export Chain_id_one=''
+export IP_server_one=''
+export RPC_port_one=''
+export GRPC_port_one=''
+export Prefix_one=''
+export Denom_one=''
+export Chain_id_two=''
+export IP_server_two=''
+export RPC_port_two=''
+export GRPC_port_two=''
+export Prefix_two=''
+export Denom_two=''" >> $HOME/.bash_profile
+source $HOME/.bash_profile
 ```
 
 Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.0.0/config.toml))
