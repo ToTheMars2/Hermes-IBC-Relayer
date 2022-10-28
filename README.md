@@ -59,8 +59,8 @@ first_mnemonic="" \
 second_mnemonic=""
 ```
 ```
-hermes keys add  --chain cosmoshub-4 --mnemonic-file $( echo "$first_mnemonic" > first_mnemonic && echo "$PWD/first_mnemonic")
-hermes keys add  --chain cosmoshub-4 --mnemonic-file $( echo "$second_mnemonic" > first_mnemonic && echo "$PWD/first_mnemonic")
+hermes keys add  --chain $Chain_id_one --mnemonic-file $( echo "$first_mnemonic" > first_mnemonic && echo "$PWD/first_mnemonic")
+hermes keys add  --chain $Chain_id_two --mnemonic-file $( echo "$second_mnemonic" > first_mnemonic && echo "$PWD/first_mnemonic")
 ```
 
 Створюємо сервісник
