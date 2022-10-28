@@ -11,8 +11,7 @@ export IP_server_two=${IP_server_two}
 export RPC_port_two=${RPC_port_two}
 export GRPC_port_two=${GRPC_port_two}
 export Prefix_two=${Prefix_two}
-export Denom_two=${Denom_two}
-" >> $HOME/.bash_profile
+export Denom_two=${Denom_two}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 echo "[global]
