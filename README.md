@@ -92,7 +92,7 @@ systemctl start hermesd
 
 Провірка логів
 ```
- journalctl -u hermes -f
+journalctl -u hermesd -f
  
 ```
 
