@@ -72,7 +72,7 @@ key_name = 'testkey'
 store_prefix = 'ibc'
 default_gas = 100000
 max_gas = 400000
-gas_price = { price = 0.001, denom = '$Denom_one' }
+gas_price = { price = 0.001, denom = '$Denom_two' }
 gas_multiplier = 1.1
 max_msg_num = 30
 max_tx_size = 2097152
