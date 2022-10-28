@@ -34,6 +34,7 @@ export RPC_port_one=''
 export GRPC_port_one=''
 export Prefix_one=''
 export Denom_one=''
+
 export Chain_id_two=''
 export IP_server_two=''
 export RPC_port_two=''
