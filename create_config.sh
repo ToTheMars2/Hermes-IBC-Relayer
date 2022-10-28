@@ -24,7 +24,7 @@ host = '0.0.0.0'
 port = 3001
 
 [[chains]]
-id = '$Chain-id_one'
+id = '$Chain_id_one'
 rpc_addr = 'http://$IP_server_one:$RPC_port_one'
 grpc_addr = 'http://$IP_server_one:$GRPC_port_one'
 websocket_addr = 'ws://$IP_server_one:$RPC_port_one/websocket'
@@ -45,7 +45,7 @@ trust_threshold = { numerator = '1', denominator = '3' }
 address_type = { derivation = 'cosmos' }
 
 [[chains]]
-id = '$Chain-id_two'
+id = '$Chain_id_two'
 rpc_addr = 'http://$IP_server_two:$RPC_port_two'
 grpc_addr = 'http://$IP_server_two:$GRPC_port_two'
 websocket_addr = 'ws://$IP_server_two:$RPC_port_two/websocket'
