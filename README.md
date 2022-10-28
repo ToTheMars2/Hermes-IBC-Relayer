@@ -46,9 +46,9 @@ Denom_two=""
 
 Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.0.0/config.toml))
 ```
-wget https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/create_config.sh \
-chmod +x create_config.sh \
-bash ./create_config.sh \
+wget https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/create_config.sh && 
+chmod +x create_config.sh && 
+bash ./create_config.sh && 
 rm create_config.sh
 
 ```
