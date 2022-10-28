@@ -73,7 +73,7 @@ After=network-online.target
 
 [Service]
 User=root
-ExecStart=which(hermes) start
+ExecStart=$(which hermes) start
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
