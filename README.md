@@ -38,7 +38,7 @@ source ~/.bash_profile
 
 ```
 
-Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.0.0/config.toml))
+Створюємо файл
 ```
 bash ~/.hermes/change.sh &&
 wget https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/create_config.sh && 
