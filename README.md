@@ -113,5 +113,5 @@ hid-noded tx ibc-transfer transfer transfer channel-10 <uptick1....> 10uhid --fr
 
 Провірка баланса на гаманці
 ```
-hermes keys balances --chain <chain-id>
+hermes keys balance --chain <chain-id>
 ```
