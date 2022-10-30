@@ -110,3 +110,8 @@ journalctl -u hermesd -f
 ```
 hid-noded tx ibc-transfer transfer transfer channel-10 <uptick1....> 10uhid --from <wallet-name> --chain-id="jagrat"  --fees 4000uhid --node http://localhost:<port>
 ```
+
+Провірка баланса на гаманці
+```
+hermes keys balances --chain <chain-id>
+```
