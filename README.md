@@ -58,6 +58,14 @@ rm create_config.sh
 
 ```
 
+
+Провірка вашого конфігу
+```
+
+```
+[Виправення помилок]()
+
+
 Відновлюємо гаманіці для використання комісії
 ```
 first_mnemonic="" \
@@ -102,3 +110,11 @@ journalctl -u hermesd -f
 ```
 
 ## Створення каналу
+
+
+## Загальні знання
+
+Надсилання токенів по каналу
+```
+hid-noded tx ibc-transfer transfer transfer channel-10 <uptick1....> 10uhid --from <wallet-name> --chain-id="jagrat"  --fees 4000uhid --node http://localhost:<port>
+```
