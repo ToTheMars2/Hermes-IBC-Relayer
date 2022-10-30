@@ -20,6 +20,7 @@ mkdir -p .hermes
 Встановлюємо cargo
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh #Вибираємо (default)
+source .bashrc
 
 ```
 
