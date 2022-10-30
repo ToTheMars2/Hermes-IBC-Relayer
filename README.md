@@ -32,14 +32,14 @@ cargo install ibc-relayer-cli@1.0.0 --bin hermes --locked
 Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.0.0/config.toml))
 Для цього нам потрібно створити зміні
 ```
-wget -P ~/ https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/change.sh &&
-nano change.sh
+wget -P ~/.hermes https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/change.sh &&
+nano ~/.hermes/change.sh
 
 ```
 
 Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.0.0/config.toml))
 ```
-bash ~/change.sh
+bash ~/.hermes/change.sh
 wget https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/create_config.sh && 
 chmod +x create_config.sh && 
 bash ./create_config.sh && 
