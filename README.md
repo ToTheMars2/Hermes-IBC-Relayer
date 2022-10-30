@@ -32,35 +32,25 @@ cargo install ibc-relayer-cli@1.0.0 --bin hermes --locked
 Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.0.0/config.toml))
 Для цього нам потрібно створити зміні
 ```
-echo "
-export Chain_id_one=''
-export IP_server_one=''
-export RPC_port_one=''
-export GRPC_port_one=''
-export Prefix_one=''
-export Denom_one=''
+wget -P ~/ https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/change.sh &&
+nano change.sh
 
-export Chain_id_two=''
-export IP_server_two=''
-export RPC_port_two=''
-export GRPC_port_two=''
-export Prefix_two=''
-export Denom_two=''" >> $HOME/.bash_profile
-source $HOME/.bash_profile
 ```
 
 Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.0.0/config.toml))
 ```
+bash ~/change.sh
 wget https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/create_config.sh && 
 chmod +x create_config.sh && 
 bash ./create_config.sh && 
-rm create_config.sh
+rm create_config.sh ~/change.sh
 
 ```
 
 
 Провірка вашого конфігу
 ```
+hermes health-check
 
 ```
 [Виправення помилок]()
@@ -75,6 +65,7 @@ second_mnemonic=""
 hermes keys add  --chain $Chain_id_one --mnemonic-file $( echo "$first_mnemonic" > mnemonic && echo "$PWD/mnemonic")
 hermes keys add  --chain $Chain_id_two --mnemonic-file $( echo "$second_mnemonic" > mnemonic && echo "$PWD/mnemonic")
 rm mnemonic
+
 ```
 
 Створюємо сервісник
