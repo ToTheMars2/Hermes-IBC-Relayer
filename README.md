@@ -98,7 +98,7 @@ systemctl start hermesd
 
 Провірка логів
 ```
-journalctl -u hermesd -f
+journalctl -u hermesd -f -o cat
  
 ```
 
