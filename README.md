@@ -35,13 +35,13 @@ cargo install ibc-relayer-cli@1.0.0 --bin hermes --locked
 ```
 wget -P ~/.hermes https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/change.sh &&
 nano ~/.hermes/change.sh &&
+bash ~/.hermes/change.sh &&
 source ~/.bash_profile
 
 ```
 
 Створюємо файл
 ```
-bash ~/.hermes/change.sh &&
 wget https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/create_config.sh && 
 chmod +x create_config.sh && 
 bash ./create_config.sh && 
