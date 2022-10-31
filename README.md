@@ -20,12 +20,12 @@ mkdir -p .hermes
 Встановлюємо cargo
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh #Вибираємо (default)
-source .bashrc
 
 ```
 
 Встановлюємо бінарник через cargo([оснання версія](https://github.com/informalsystems/hermes/releases)) 
 ```
+source .bashrc
 cargo install ibc-relayer-cli@1.0.0 --bin hermes --locked
 
 ```
