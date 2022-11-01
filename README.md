@@ -45,7 +45,7 @@ source ~/.bash_profile
 wget https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/create_config.sh && 
 chmod +x create_config.sh && 
 bash ./create_config.sh && 
-rm create_config.sh ~/change.sh
+rm create_config.sh 
 
 ```
 
