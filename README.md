@@ -26,11 +26,11 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh #Вибираєм
 Встановлюємо бінарник через cargo([оснання версія](https://github.com/informalsystems/hermes/releases)) 
 ```
 source .bashrc
-cargo install ibc-relayer-cli@1.0.0 --bin hermes --locked
+cargo install ibc-relayer-cli@1.1.0 --bin hermes --locked
 
 ```
 
-Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.0.0/config.toml))
+Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.1.0/config.toml))
 Для цього нам потрібно створити зміні
 ```
 wget -P ~/.hermes https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/change.sh &&
