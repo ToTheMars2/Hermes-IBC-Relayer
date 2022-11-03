@@ -6,6 +6,7 @@
 
 * [Підготовка hermes](https://github.com/ToTheMars2/Hermes-IBC-Relayer/blob/main/README.md#%D0%BF%D1%96%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-hermes)
 * [Створення каналу](https://github.com/ToTheMars2/Hermes-IBC-Relayer/blob/main/README.md#%D1%81%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F-%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D1%83)
+* [Корисні команди]()
 
 
 ## Підготовка hermes
@@ -103,15 +104,25 @@ journalctl -u hermesd -f -o cat
 ```
 
 ## Створення каналу
+Щоб створити канал на балансі повинні бути токени
 
 
-## Загальні знання
 ```
-Bin="" \ # hid-noded
-Cosmos_addr="" \ # hid1.....
-Name_wallet="" \ # tothemars
-Chain_id="" \ # jagrat
-Node="" \ # http://localhost:26657
+hermes create channel --a-chain <a_chain_id> --b-chain <b_chain_id> --a-port <a_port_id> --b-port <b_port_id> --new-client-connection
+```
+
+## Корисні команди 
+```
+echo "
+Bin="" # hid-noded \
+Cosmos_addr="" # hid1..... \
+Name_wallet="" # tothemars \
+Chain_id=""  # jagrat \
+Node=""  # http://localhost:26657 
+" > variables.sh &&
+nano variables.sh &&
+bash variables.sh &&
+rm variables.sh
 
 ```
 
