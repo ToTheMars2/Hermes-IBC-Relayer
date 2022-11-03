@@ -106,13 +106,28 @@ journalctl -u hermesd -f -o cat
 
 
 ## Загальні знання
-
-Надсилання токенів по каналу
 ```
-hid-noded tx ibc-transfer transfer transfer channel-10 <uptick1....> 10uhid --from <wallet-name> --chain-id="jagrat"  --fees 4000uhid --node http://localhost:<port>
+Bin="" \ # hid-noded
+Cosmos_addr="" \ # hid1.....
+Name_wallet="" \ # tothemars
+Chain_id="" \ # jagrat
+Node="" \ # http://localhost:26657
+
+```
+
+
+Надсилання токенів
+```
+$Bin tx ibc-transfer transfer transfer channel-10 $Cosmos_addr 10uhid --from $Name_wallet --chain-id $Chain_id --node $node
 ```
 
 Провірка баланса на гаманці
 ```
-hermes keys balance --chain <chain-id>
+hermes keys balance --chain $Chain_id
+```
+
+Перегляд створених гаманців
+```
+hermes query channels --chain $Chain_id --show-counterparty
+
 ```
