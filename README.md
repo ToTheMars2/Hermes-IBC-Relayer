@@ -113,17 +113,10 @@ hermes create channel --a-chain <a_chain_id> --b-chain <b_chain_id> --a-port <a_
 
 ## Корисні команди 
 ```
-echo "
-Bin="" # hid-noded 
-Cosmos_addr="" # hid1..... 
-Name_wallet="" # tothemars 
-Chain_id=""  # jagrat 
-Node=""  # http://localhost:26657 
-" > variables.sh &&
-nano variables.sh &&
-bash variables.sh &&
-rm variables.sh
-
+wget -P ~/.hermes https://raw.githubusercontent.com/ToTheMars2/Hermes-IBC-Relayer/main/variables.sh &&
+nano ~/.hermes/variables.sh &&
+bash ~/.hermes/variables.sh &&
+source ~/.bash_profile
 ```
 
 
