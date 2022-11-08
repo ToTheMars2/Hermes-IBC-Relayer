@@ -13,7 +13,7 @@ sed -n "91 s/^.*://p" ~/$Name_config_file/config/config.toml | sed -n 's/"$//p'
 
 ```
 
-<b>GRPC_PORT</b>(165, 181)
+<b>GRPC_PORT</b>(165, 178)
 ```
 sed -n "165 s/^.*://p" ~/$Name_config_file/config/app.toml | sed -n 's/"$//p'
 
