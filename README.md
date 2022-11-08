@@ -113,7 +113,7 @@ journalctl -u hermesd -f -o cat
 
 
 ```
-hermes create channel --a-chain <a_chain_id> --b-chain <b_chain_id> --a-port <a_port_id> --b-port <b_port_id> --new-client-connection
+hermes create channel --a-chain $Chain_id_one --b-chain $Chain_id_two --a-port transfer --b-port transfer --new-client-connection
 ```
 
 ## Корисні команди 
