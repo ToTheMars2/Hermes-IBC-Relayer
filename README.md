@@ -31,6 +31,10 @@ cargo install ibc-relayer-cli@1.1.0 --bin hermes --locked
 
 ```
 
+
+[Get variables quickly](https://github.com/ToTheMars2/Hermes-IBC-Relayer/blob/main/Quick_Variables.md)
+
+
 Створюємо файл `config.toml` ([правильна конфігурація](https://github.com/informalsystems/hermes/blob/v1.1.0/config.toml))
 Для цього нам потрібно створити зміні
 ```
